@@ -10,11 +10,12 @@ body {
   overflow-x: hidden;
 }
 
-..container {
+.container {
   width: 100%;
   max-width: 100%;
   padding: 16px;
-  text-align: center;
+  margin: 0 auto;
+}
 }
 
 .logo {
@@ -42,13 +43,10 @@ body {
 }
 
 button {
-  background: #00ffcc;
-  border: white;
-  padding: 10px 15px;
-  margin-top: 10px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  padding: 16px;
+  margin: 16px 0; 
 }
 
 footer {
@@ -220,4 +218,14 @@ footer {
   color: white;
   font-size: 26px;
   cursor: pointer;
+}
+iframe {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
 }
