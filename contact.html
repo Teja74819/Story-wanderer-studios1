@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - StoryWanderer</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<div id="sideMenu" class="side-menu">
+  <div class="close-btn" onclick="toggleMenu()">×</div>
+  <a href="Home.html">Home</a>
+  <a href="Index.html">Links</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+  <h1>Contact Me</h1>
+
+  <form class="contact-form"
+        action="https://formsubmit.co/juluritejalakshmi@gmail.com"
+        method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <!-- Optional settings -->
+    <input type="hidden" name="_subject" value="New Website Contact">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  if (menu.style.right === "0px") {
+    menu.style.right = "-260px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
+</script>
+</body>
+</html>

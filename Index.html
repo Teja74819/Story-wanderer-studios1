@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StoryWanderer | Links & Prompts</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<div id="sideMenu" class="side-menu">
+  <div class="close-btn" onclick="toggleMenu()">×</div>
+  <a href="Home.html">Home</a>
+  <a href="Index.html">Links</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</div>
+  <div class="container">
+
+    <!-- TOP LOGO -->
+    <img src="logo.png" alt="StoryWanderer Logo" class="top-logo">
+
+    <h1>StoryWanderer Studios</h1>
+    <p>AI Story Prompts & Useful Links</p>
+
+    <!-- BUTTONS -->
+    <a class="btn" href="https://youtube.com/@wanderer5748"target="_blank">
+      📺 Subscribe on YouTube
+    </a>
+    
+    <a class="btn" href="https://chat.openai.com" target="_blank">
+      🤖 ChatGPT
+    </a>
+
+    <a class="btn" href="https://gemini.google.com" target="_blank">
+      ✨ Gemini veo3
+    </a>
+    <!-- PROMPT BOX -->
+    <div class="prompt-box">
+      <h2>🔥 AI Movie Trailer Prompt</h2>
+      <p>
+        Script prompt Generate a cinematic trailer script for Avengers vs Knull that features a high-stakes suspenseful storyline.The trailer must:The trailer must be written scene by scene, with each scene clearly labeled and describedand add soundBe narrated by a single voice-over (male or female) — no dialogue or additional voices.Feature individual Avengers characters in isolated, intense scenes — no crowd shots orgroup scenes.Be styled like a Marvel movie trailer — dramatic pacing, emotional tone, and visual impact Include:Cinematic camera angles such as:Slow push-ins on facesWide establishing shots for scaleLow-angle shots for power and tensionDynamic tracking and orbit shots during actionLighting direction and visual contrast:Use high contrast (e.g., shadowed environments with glowing elements like powers,weapons, eyes, or tendrils)Apply backlighting, silhouette effects, and selective spotlights to enhance mood Create an atmospheric look using flickering light sources, mist, smoke, or embersFocus on making each shot visually stunning, moody, and suspensefulThe trailer should build tension steadily, with each scene ending in a visual or emotionalpeak, and conclude with a powerful final line of narration and a reveal.Image prompt:Write the detail image prompt with the camera angle
+      </p>
+      <button onclick="copyPrompt()">📋 Copy Prompt</button>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video-box">
+      <h2>🎬 Watch the Video</h2>
+      <iframe src="https://www.youtube.com/embed/XFaH-Eku2B8"
+        title="StoryWanderer Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <a class="btn" href="https://youtu.be/XFaH-Eku2B8" target="_blank">
+      ▶ Open in YouTube
+    </a>
+  
+    
+    <!-- FOOTER -->
+    <footer>
+      © 2026 StoryWandererstudios
+    </footer>
+  </div>
+  <script>
+    function copyPrompt() {
+      const text = "Script prompt Generate a cinematic trailer script for Avengers vs Knull that features a high-stakes suspenseful storyline.The trailer must:The trailer must be written scene by scene, with each scene clearly labeled and describedand add soundBe narrated by a single voice-over (male or female) — no dialogue or additional voices.Feature individual Avengers characters in isolated, intense scenes — no crowd shots orgroup scenes.Be styled like a Marvel movie trailer — dramatic pacing, emotional tone, and visual impact Include:Cinematic camera angles such as:Slow push-ins on facesWide establishing shots for scaleLow-angle shots for power and tensionDynamic tracking and orbit shots during actionLighting direction and visual contrast:Use high contrast (e.g., shadowed environments with glowing elements like powers,weapons, eyes, or tendrils)Apply backlighting, silhouette effects, and selective spotlights to enhance mood Create an atmospheric look using flickering light sources, mist, smoke, or embersFocus on making each shot visually stunning, moody, and suspensefulThe trailer should build tension steadily, with each scene ending in a visual or emotionalpeak, and conclude with a powerful final line of narration and a reveal.Image prompt:Write the detail image prompt with the camera angle";
+      navigator.clipboard.writeText(text);
+      alert("Prompt copied");
+    }
+  </script>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  if (menu.style.right === "0px") {
+    menu.style.right = "-220px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
+</script>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  if (menu.style.right === "0px") {
+    menu.style.right = "-260px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
+</script>
+</body>
+</html>

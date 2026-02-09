@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StoryWanderer | Home</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<div id="sideMenu" class="side-menu">
+  <div class="close-btn" onclick="toggleMenu()">×</div>
+  <a href="Home.html">Home</a>
+  <a href="Index.html">Links</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</div>
+  <div class="container">
+
+    <img src="logo.png" alt="StoryWanderer Logo" class="top-logo">
+
+    <h1>StoryWanderer Studios</h1>
+
+    <p class="channel-desc">
+I help creators and small businesses build modern websites,
+link pages, and content-focused platforms.
+</p>
+<a class="btn" href="services.html">Get a Website Like This</a>
+
+    <a class="btn" href="https://youtube.com/@wanderer5748" target="_blank">
+      📺 Visit My YouTube Channel
+    </a>
+
+    <footer>
+      © 2026 StoryWandererstudios
+    </footer>
+
+  </div>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  if (menu.style.right === "0px") {
+    menu.style.right = "-220px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
+</script>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  if (menu.style.right === "0px") {
+    menu.style.right = "-260px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StoryWanderer | Services</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<div id="sideMenu" class="side-menu">
+  <div class="close-btn" onclick="toggleMenu()">×</div>
+  <a href="Home.html">Home</a>
+  <a href="Index.html">Links</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+  <h1>My Services</h1>
+
+  <div class="card">
+    <h3>AI Movie Trailer Prompts</h3>
+    <p>High quality cinematic prompts for AI videos</p>
+  </div>
+
+  <div class="card">
+    <h3>Website for YouTubers</h3>
+    <p>Links and prompt websites like this one</p>
+  </div>
+
+  <div class="card">
+    <h3>Custom Prompt Writing</h3>
+    <p>Story prompts for movies, reels and shorts</p>
+  </div>
+<a class="btn" href="contact.html" style="margin-top:30px; display:inline-block;">
+Contact Me for a Website
+</a>
+</div>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+
+  if (menu.style.right === "0px") {
+    menu.style.right = "-260px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
+</script>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  if (menu.style.right === "0px") {
+    menu.style.right = "-260px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
+</script>
+</body>
+</html>
